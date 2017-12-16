@@ -4,16 +4,31 @@ body {
 }
 
 .main-section {
-    background-color: rgb(255,178,178);
+    /* background-color: rgb(255,178,178); */
     width: 80%;
     height: 80%;
+    color: rgb(84, 83, 88);
 
 }
 
 h1 {
-    color: rgb(232, 209, 209);
+    /* color: rgb(232, 209, 209); */
+    color:rgb(84, 83, 88);
 }
-
 #start {
-
+    background-color: rgb(84, 83, 88);
+    color: rgb(203, 155, 157);
+    width: 186px;
+    height: 52px;
+    margin-left: 42%;
+    margin-top: -1%;
 }
+
+
+/* found on pintrest https://www.pinterest.com/pin/182958803594257355
+dark grey rgb (84, 83, 88) OR 60, 61, 66
+light grey (210, 210, 212)
+light brown (196, 186, 184)
+dark brown (145, 130, 216)
+rose gold (203, 155, 157) OR 193, 138, 126
+*/ 
