@@ -9,20 +9,13 @@ console.log("we are linked");
 
 
 //get document ready 
-$("document").on("ready", function() {
-
-    var timer; 
-    var counter; 
-
-    var intervalId;
-
+$(document).ready(function() {
+    console.log("I'm ready");
     $("#start").click(function() {
-     $(".questions").add("What is the name of Andy Dwyer's band?");
+        console.log("Yay, you started the game");
     });
 
-
 });
-
 //template from code academy 
  //events from code academy 
 //  $(document).ready(function() {
