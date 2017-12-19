@@ -13,31 +13,24 @@ $(document).ready(function() {
     console.log("I'm ready");
     $("#start").click(function() {
         console.log("Yay, you started the game");
+        var question1 = $("<p> What is the name of Andy Dwyer's band? </p>");
+        $(".questions").append(question1);
+        var question2 = $("<p> what is the name of Tom Haverford's bar? </p>");
+        $(".questions").append(question2);
+        var question3 =$("<p> which of the following is not a Jean Ralphio quote? </p>");
+        $(".questions").append(question3);
+        var question4 =$("<p> What is Chris's trademarked burger?</p>");
+        $(".questions").append(question4);
+    
+  
+    
+
     });
 
 });
-//template from code academy 
- //events from code academy 
-//  $(document).ready(function() {
-//         $('thingToTouch').event(function() {
-//             $('thingToAffect').effect();
-//         });
-//     });
-//         $('thingToTouch').event(function() {
-//             $('thingToAffect').effect();
-//         });
-//     });
+
     
 
-    // when start button is clicked, do the following:
-
-    //things i;ve tried 
-    //i've unlinked and re-linekd the file again
-    //i tried to do this all in same html file 
-    //doucment. onclick 
-    // i spent a lot of time on both code school and code academy doing on click events. I don't why I can do them there, but not on these assignments.
-
-        //try on 12/18  -store questions and anwers in array or object, given the data attributes 
         
 
         //show the questions 
