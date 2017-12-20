@@ -6,6 +6,8 @@ console.log("we are linked");
 
 //global variables to hold time and score
 
+//you know what would be cool? randomly displaying a new set of questions every time the start button is pressed 
+
 
 
 //get document ready 
@@ -146,6 +148,10 @@ $(document).ready(function() {
 //here is the src for ron swanson https://vignette4.wikia.nocookie.net/parksandrecreation/images/3/3a/Swanson_Pyramid_of_Greatness.jpg/revision/latest?cb=20111014231319
 //if answers are not correct, display a jean ralphio meme here is source- https://uproxx.files.wordpress.com/2015/06/j-ralph-dizzity.gif?w=650
 
+
+/* here are the API's I'll be using 
+-- OPEN API TRIVIA - https://opentdb.com/api.php?amount=10&category=14&difficulty=medium&type=multiple
+-- GIPHY API 
 
 
 
