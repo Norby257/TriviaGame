@@ -11,6 +11,23 @@ console.log("we are linked");
 //get document ready 
 $(document).ready(function() {
     console.log("I'm ready");
+
+            //global vars 
+            var count; 
+            var score;
+            var timer; 
+            var duration = 5;
+            $(".timer").html("<h1> " + duration + "</h1>");
+             //set timer to 1:20 on page 
+        // $(".timer").text("1:20");
+        // //Get timer to start counting down 
+        // function countDown() {
+        //     //count down one second at a time 
+        //     invervalId = setInterval(decrement, 1000);
+            //show the questions 
+            //disable the button after it's clicked 
+            
+
     $("#start").click(function() {
         console.log("Yay, you started the game");
         var question1 = $("<p> What is the name of Andy Dwyer's band? </p>");
@@ -21,6 +38,24 @@ $(document).ready(function() {
         $(".questions").append(question3);
         var question4 =$("<p> What is Chris's trademarked burger?</p>");
         $(".questions").append(question4);
+        var intervalId = setInterval(function() {
+            duration--;
+            $(".timer").html("<h1> " + duration + "</h1>");            
+            if (duration === 0) {
+                //alert 
+                alert("the game is over!");
+                clearInterval(intervalId);
+                $("#start").prop("disabled", false);
+                duration = 5;
+                $(".timer").html("<h1> " + duration + "</h1>");            
+                
+                
+            }
+
+        },1000);
+        $(this).prop("disabled", true);
+
+
     
   
     
@@ -33,15 +68,9 @@ $(document).ready(function() {
 
         
 
-        //show the questions 
 
 
-        //set timer to 1:20 on page 
-        // $(".timer").text("1:20");
-        // //Get timer to start counting down 
-        // function countDown() {
-        //     //count down one second at a time 
-        //     invervalId = setInterval(decrement, 1000);
+       
 
 
         
