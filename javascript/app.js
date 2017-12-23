@@ -17,8 +17,11 @@ $(document).ready(function() {
             //global vars 
             var count; 
             var score;
+            var incorrectAnswer;
             var timer; 
             var duration = 5;
+            var questionsAnswered;
+            var questionsNotAnswered;
             $(".timer").html("<h1> " + duration + "</h1>");
              //set timer to 1:20 on page 
         // $(".timer").text("1:20");
@@ -28,6 +31,8 @@ $(document).ready(function() {
         //     invervalId = setInterval(decrement, 1000);
             //show the questions 
             //disable the button after it's clicked 
+
+            //ok so this part will for sure be refactored, but keeping it here like this for now
             
 
     $("#start").click(function() {
@@ -47,6 +52,13 @@ $(document).ready(function() {
                 //alert 
                 alert("the game is over!");
                 clearInterval(intervalId);
+                $(".questions").empty();
+                $("<p>").text(`Correct Answers: ${score}`);
+                $("<p>").text(`Incorrect Answers: ${score}`);
+                $("<p>").text(`unanswered: ${score}`);
+            }
+                
+    
                 $("#start").prop("disabled", false);
                 duration = 5;
                 $(".timer").html("<h1> " + duration + "</h1>");            
@@ -137,10 +149,7 @@ $(document).ready(function() {
 
 
 //once timer is zero, do the following:
-//display all done!
-//display correct answers: score 
-//display incorrect answers: score
-//display unanswered: score
+
 
 //nice to have - sound effect if all answers are correct
 //nice to have - picture of ron swanson pyramid of greatness if all answers are correct
@@ -155,7 +164,7 @@ $(document).ready(function() {
 
 
 
-
+*/ 
 
 
 
