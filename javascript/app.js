@@ -6,7 +6,6 @@ console.log("we are linked");
 
 //global variables to hold time and score
 
-//you know what would be cool? randomly displaying a new set of questions every time the start button is pressed 
 
 //get document ready 
 $(document).ready(function() {
@@ -15,9 +14,8 @@ $(document).ready(function() {
             //global vars 
             var count; 
             var score;
-            var incorrectAnswer;
             var timer; 
-            var duration = 5;
+            var duration = 120;
             var questionsAnswered;
             var questionsNotAnswered;
             $(".timer").html("<h1> " + duration + "</h1>");
@@ -48,12 +46,37 @@ $(document).ready(function() {
                 $(".questions").empty();
                
                 $("#start").prop("disabled", false);
-                duration = 5;
-                $(".timer").html("<h1> " + duration + "</h1>");    
+                duration = 120;
+                $(".timer").html("<h1> " + duration + "</h1>");   
+
+                //pseudo code for what I could not finish 
+                //function for getting the score - on click for the submit button 
+
+                function getScore(score) {
+                    $(".submit").on("click", function(){
+                        //see what was selected 
+                        $( "input[type=radio]:checked" ).val();
+                        //if something was selected, add one to answered questions 
+                        if (":checked", "true") {
+                            questionsAnswered++;
+                            //check to see if selected answers are correct 
+                            if (questionsAnswered.val([i]) === correctAnswers[i]) {
+                                score++;
+                            }
+                        }
+                        else {
+                            questionsNotAnswered++;
+                        }
+
+                        
+                        
+
+                    })
+                }
                 
-                //function for showing answers -pseudo code since I could not finish this part 
+                //function for showing answers -pseudo code 
+
                 function showScore(score) {
-                    $( "input[type=radio]:checked" ).val();
                     $("<p>").text(`Correct Answers: ${score}`);
                     $("<p>").text(`Incorrect Answers: ${score}`);
                     $("<p>").text(`unanswered: ${score}`);
