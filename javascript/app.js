@@ -23,6 +23,11 @@ $(document).ready(function() {
             var questionsAnswered;
             var questionsNotAnswered;
             $(".timer").html("<h1> " + duration + "</h1>");
+            // $(".questions").empty();
+            //hide answers  http://api.jquery.com/val/
+            //build the radio buttons in the html then hide them. when button is clicked show them 
+            //use val attribute to get val of answer. compare to correct answer to score 
+
              //set timer to 1:20 on page 
         // $(".timer").text("1:20");
         // //Get timer to start counting down 
@@ -36,6 +41,8 @@ $(document).ready(function() {
             
 
     $("#start").click(function() {
+        // $(".questions").show(); 
+        // $(".choices").show();
         console.log("Yay, you started the game");
         var question1 = $("<p> What is the name of Andy Dwyer's band? </p>");
         $(".questions").append(question1);
@@ -45,6 +52,7 @@ $(document).ready(function() {
         $(".questions").append(question3);
         var question4 =$("<p> What is Chris's trademarked burger?</p>");
         $(".questions").append(question4);
+        $("#test").hide();
         var intervalId = setInterval(function() {
             duration--;
             $(".timer").html("<h1> " + duration + "</h1>");            
@@ -56,7 +64,7 @@ $(document).ready(function() {
                 $("<p>").text(`Correct Answers: ${score}`);
                 $("<p>").text(`Incorrect Answers: ${score}`);
                 $("<p>").text(`unanswered: ${score}`);
-            }
+            
                 
     
                 $("#start").prop("disabled", false);
