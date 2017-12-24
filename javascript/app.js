@@ -23,6 +23,7 @@ $(document).ready(function() {
             var questionsAnswered;
             var questionsNotAnswered;
             $(".timer").html("<h1> " + duration + "</h1>");
+            $(".questions").hide();
             // $(".questions").empty();
             //hide answers  http://api.jquery.com/val/
             //build the radio buttons in the html then hide them. when button is clicked show them 
@@ -44,15 +45,8 @@ $(document).ready(function() {
         // $(".questions").show(); 
         // $(".choices").show();
         console.log("Yay, you started the game");
-        var question1 = $("<p> What is the name of Andy Dwyer's band? </p>");
-        $(".questions").append(question1);
-        var question2 = $("<p> what is the name of Tom Haverford's bar? </p>");
-        $(".questions").append(question2);
-        var question3 =$("<p> which of the following is not a Jean Ralphio quote? </p>");
-        $(".questions").append(question3);
-        var question4 =$("<p> What is Chris's trademarked burger?</p>");
-        $(".questions").append(question4);
-        $("#test").hide();
+        $(".questions").show();
+      
         var intervalId = setInterval(function() {
             duration--;
             $(".timer").html("<h1> " + duration + "</h1>");            
