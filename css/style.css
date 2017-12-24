@@ -11,6 +11,11 @@ body {
 
 }
 
+#ron {
+    width: 500px;
+    height: 214px;
+}
+
 h1 {
     /* color: rgb(232, 209, 209); */
     color:rgb(84, 83, 88);
