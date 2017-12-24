@@ -1,1 +1,2 @@
 # TriviaGame
+This is a simple Trivia Game that is Parks and Recs themed. The player has two minutes to answer a series of questions pertaining to the Parks and Recreation Television show that aired from 2009-2015. 

@@ -24,7 +24,7 @@ $(document).ready(function() {
             var questionsNotAnswered;
             $(".timer").html("<h1> " + duration + "</h1>");
             $(".questions").hide();
-            // $(".questions").empty();
+
             //hide answers  http://api.jquery.com/val/
             //build the radio buttons in the html then hide them. when button is clicked show them 
             //use val attribute to get val of answer. compare to correct answer to score 
@@ -38,20 +38,24 @@ $(document).ready(function() {
             //show the questions 
             //disable the button after it's clicked 
 
-            //ok so this part will for sure be refactored, but keeping it here like this for now
             
-
+    //user clicks button, questions and answers are displayed 
     $("#start").click(function() {
         // $(".questions").show(); 
         // $(".choices").show();
         console.log("Yay, you started the game");
         $(".questions").show();
-      
+        //keep score
+        //get value of each question. if matches correct value. then add one to counter
+        // $( "input[type=radio]:checked" ).val();
+        
+
+      //var for timer. when button is clicked, the timer starts DECREMENTING 
         var intervalId = setInterval(function() {
             duration--;
             $(".timer").html("<h1> " + duration + "</h1>");            
             if (duration === 0) {
-                //alert 
+                //alert user that the game is over 
                 alert("the game is over!");
                 clearInterval(intervalId);
                 $(".questions").empty();
@@ -80,29 +84,12 @@ $(document).ready(function() {
 
 });
 
-    
-
-        
-
-
-
-       
-
-
-        
-        
-
-        
-//while timer is greater than 0, 
-
-
-// dynamically update the DOM to display questions and radio buttons 
 
 //user can only select one radio button for each question
 ///and then have a submit function to compare the value 
 //single comparison 
 
-//how to check if answers are correct? store correct answers and compare them 
+//how to check if answers are correct? use the .val()  
 
 
 
