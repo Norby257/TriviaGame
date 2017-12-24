@@ -7,6 +7,7 @@ console.log("we are linked");
 //global variables to hold time and score
 
 //you know what would be cool? randomly displaying a new set of questions every time the start button is pressed 
+//API calls to a tv show database 
 
 
 
@@ -47,7 +48,7 @@ $(document).ready(function() {
         $(".questions").show();
         //keep score
         //get value of each question. if matches correct value. then add one to counter
-        // $( "input[type=radio]:checked" ).val();
+        $( "input[type=radio]:checked" ).val();
         
 
       //var for timer. when button is clicked, the timer starts DECREMENTING 
@@ -85,64 +86,10 @@ $(document).ready(function() {
 });
 
 
-//user can only select one radio button for each question
-///and then have a submit function to compare the value 
-//single comparison 
-
-//how to check if answers are correct? use the .val()  
-
-
-
-
-
-
-
-
-
-//once timer is zero, do the following:
-//display all done!$("document").on("ready", function() {
-
-
-        //show the questions 
-
-
-        //set timer to 1:20 on page 
-        // $(".timer").text("1:20");
-        // //Get timer to start counting down 
-        // function countDown() {
-        //     //count down one second at a time 
-        //     invervalId = setInterval(decrement, 1000);
-
-
-        
-        
-
-        
-//while timer is greater than 0, 
-
-
-// dynamically update the DOM to display questions and radio buttons 
-
-//user can only select one radio button for each question
-///and then have a submit function to compare the value 
-//single comparison 
-
-//how to check if answers are correct? store correct answers and compare them 
-
-
-
-
-
-
-
-
-
 //once timer is zero, do the following:
 
 
-//nice to have - sound effect if all answers are correct
-//nice to have - picture of ron swanson pyramid of greatness if all answers are correct
-//and maybe also that quote from jean ralphio ".... in all of pawnee"
+
 //here is the src for ron swanson https://vignette4.wikia.nocookie.net/parksandrecreation/images/3/3a/Swanson_Pyramid_of_Greatness.jpg/revision/latest?cb=20111014231319
 //if answers are not correct, display a jean ralphio meme here is source- https://uproxx.files.wordpress.com/2015/06/j-ralph-dizzity.gif?w=650
 
