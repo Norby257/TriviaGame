@@ -1,2 +1,15 @@
-# TriviaGame
-This is a simple Trivia Game that is Parks and Recs themed. The player has two minutes to answer a series of questions pertaining to the Parks and Recreation Television show that aired from 2009-2015. 
+#Parks and Rec Trivia 
+
+
+# About 
+
+This is a Parks and Rec themed trivia gamed built with HTML, CSS, and JQuery. 
+Can you name the Apps and Zerts?
+# Live Link 
+
+
+#Installation 
+All you need is a browser 
+
+# Authors 
+Noreen M 
